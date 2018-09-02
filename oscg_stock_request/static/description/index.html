@@ -1,0 +1,138 @@
+﻿<section class="oe_container oe_dark">
+    <div class="oe_row">
+        <div class="oe_span12" style="width: 90%">
+            <h2 class="oe_slogan">Stock Request</h2>
+            <div class="oe_row oe_spaced alert alert-info" style="padding:8px;font-weight: 200; font-size: 20px;">
+                <h2 class="oe_slogan">WHERE YOU CAN APPLY THIS MODULE?</h2>
+                <div class="oe_span12">
+                    <ul>
+                        <li>Warehouse Replenishment: For standard odoo function, when a warehouse is out of stock, odoo will automatically launch procurement according to existing order point rules.
+                        This replenishment method always losing efficacy, for instance, when the marketing sector decide to carry out some promotion campaign,
+                        they need to purchase a large amount of stock just in case. For another instance, there are situations when you can not confirm the order point,
+                        or the definition of order point is not 100 percent accurate, thus the automatic procurement will not be correct. For these kinds of scenarios,
+                        staffs need a manual procurement function. The "Stock Request" module aims to solve this problem.</li>
+                        <li>Retail Shop Order: According to shops' inventory, shop managers can fill in shop orders to ask for procurement from HQ. Given that a company may have different business modes,
+                            the pattern of procurement may also be differentiated. For normal goods, the HQ will transfer stock from main warehouse to the shop warehouses.
+                            But for fresh food, the HQ will perform centralized purchasing then the suppliers will deliver goods to the corresponding shop according to orders.(refer to Purchase Multi Picking module)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="oe_slogan">How to use</h4>
+            <div class="oe_screenshot" style="text-align: left;">
+                <ul>
+                    <li style="font-weight:bold;">
+                        Open "Stock Requests" menu and go into <span style="color: mediumpurple">Settings</span>. Make sure to select all three checkboxes in the picture. Then save.
+                    </li>
+                    <li style="font-weight:bold;">
+                        Open "Inventory" menu and go into <span style="color: mediumpurple">Configuration-Settings</span>. Select "Multi-Step Routes". Then save.
+                    </li>
+                </ul>
+                <img src="1.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="2.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <ul>
+                    <li style="font-weight:bold;">
+                        Now you can create routes that suit your needs. For instance, I will create a route, naming "TestRoute", with procurement rule that allow procurement from main warehouse to a shop warehouse.
+                    </li>
+                    <li style="font-weight:bold;">
+                        For the "Action" field choose "Move From Another Location". "Procurement Location" should be "WH/Shop1".
+                        "Source Location", choose "WH/MainWarehouse". And "TestOperation1" for "Operation Type", which I just created with the information in the picture.
+                    </li>
+                </ul>
+                <img src="3.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="4.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="5.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="6.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <ul>
+                    <li style="font-weight:bold;">
+                        Open "Stock Requests - Stock Request Orders" menu, and create a new stock request order.
+                    </li>
+                </ul>
+                <img src="7.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <ul>
+                    <li style="font-weight:bold;">
+                        In this example, I choose a product with both routes "TestRoute" and "Buy"(which is odoo demo route). The routes you can choose for a product are depending on the warehouse and location you select for the order.
+                        Because I choose warehouse "Your Company" and procurement location "WH/Shop1", the selectable route is "TestRoute".
+                    </li>
+                </ul>
+                <img src="8.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="9.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <ul>
+                    <li style="font-weight:bold;">
+                        Then confirm. It will generate a move according to the route's setting.
+                    </li>
+                </ul>
+                <img src="10.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <ul>
+                    <li style="font-weight:bold;">
+                        If you create another stock request order, and choose a product with routes "TestRoute" and "Buy", but with "WH/Stock" as procurement location. The routes you can choose will change too, and it is "Buy" now.
+                    </li>
+                </ul>
+                <img src="11.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="12.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <ul>
+                    <li style="font-weight:bold;">
+                         Then confirm, and it will generate a purchase line.
+                    </li>
+                </ul>
+                <img src="13.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="14.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+                <img src="15.png" style="width: 100%; margin-bottom: 18px; border: 1px solid lightslategray">
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row" style="background-color: #227980;">
+        <div style="margin-bottom:10px;" class="oe_slogan text-center">
+            <div class="oe_span12">
+                <h3 class="text-center" style="color:#FFFFFF; font-size:20px"><b>NOTE:</b>We offers 30 days online
+                    support from the date of purchase for all of our products.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="oe_row" style="background-color: #ff2c27;">
+        <div style="margin-bottom:10px;" class="oe_slogan text-center">
+            <div class="oe_span12">
+                <h3 class="text-center" style="color:#FFFFFF; font-size:20px">Contact us for query, support,
+                    customization</h3>
+            </div>
+            <span>
+               <a target="new" href="http://www.oscg.cn/"
+                  style="color: #ffffff !important;font-weight:bold;">Website</a> |
+               <a href="mailto:sales@oscg.biz" style="color: #ffffff !important;font-weight:bold;">Write us</a>
+           </span>
+        </div>
+    </div>
+</section>
