@@ -21,7 +21,7 @@
     'data': [
     ],
     'summary': "stock purchase request from branch companies or retail shops",
-    'images': ['static/description/icon.png'],
+    'images': ['static/description/oscg_stock_request_banner.png'],
     'license': 'OPL-1',
     'currency': 'EUR',
     'price': 30,
